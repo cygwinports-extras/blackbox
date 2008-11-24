@@ -1,0 +1,21 @@
+DESCRIPTION="Blackbox lightweight window manager"
+HOMEPAGE="http://blackboxwm.sourceforge.net/"
+SRC_URI="mirror://sourceforge/blackboxwm/${P}.tar.bz2"
+PATCH_URI="
+	mirror://portage/x11-wm/${PN}/files/${P}-gcc-4.3.patch
+	0.70.1-disable-unicode-fonts.patch
+	0.70.1-no-undefined.patch
+"
+
+PKG_NAMES="${PN} libbt0 libbt-devel"
+blackbox_CONTENTS="usr/bin/b* usr/share/"
+libbt0_CONTENTS="usr/bin/cygbt-0.dll"
+libbt_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="
+	--sysconfdir=/etc/X11/${PN}
+	--enable-shared
+	--enable-mitshm
+	--enable-shape
+	--enable-xft
+"

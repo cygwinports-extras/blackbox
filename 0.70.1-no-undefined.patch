@@ -1,0 +1,10 @@
+--- origsrc/blackbox-0.70.1/lib/Makefile.am	2005-03-31 09:32:16.000000000 -0600
++++ src/blackbox-0.70.1/lib/Makefile.am	2008-11-23 15:39:54.326291800 -0600
+@@ -63,6 +63,7 @@
+ 			XDG.hh
+ 
+ libbt_la_LIBADD =	@ICONV@ @LOCALE@
++libbt_la_LDFLAGS = -no-undefined
+ 
+ pkgconfigdir = 		$(libdir)/pkgconfig
+ nodist_pkgconfig_DATA =	libbt.pc
