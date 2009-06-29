@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libbt0 libX11_6 libXext6
+requires: libbt0 libX11_6 libXext6
 sdesc: "Lightweight window manager"
 ldesc: "Blackbox is a fast, lightweight window manager for the X Window 
 System, without all those annoying library dependencies. Blackbox is 

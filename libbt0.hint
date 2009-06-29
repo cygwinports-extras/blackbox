@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libiconv2 libX11_6 libXext6 libXft2
+requires: libiconv2 libX11_6 libXext6 libXft2
 external-source: blackbox
 sdesc: "Blackbox window manager library (runtime)"
 ldesc: "Blackbox is a fast, lightweight window manager for the X Window 
