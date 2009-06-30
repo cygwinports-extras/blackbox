@@ -1,5 +1,5 @@
 category: X11
-requires: libbt0 libiconv libX11-devel libXext-devel libXft-devel
+requires: libbt0 libiconv libstdc++6-devel libX11-devel libXext-devel libXft-devel
 external-source: blackbox
 sdesc: "Blackbox window manager library (development)"
 ldesc: "Blackbox is a fast, lightweight window manager for the X Window 

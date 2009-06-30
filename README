@@ -6,24 +6,26 @@ C++ and contains completely original code (even though the graphics
 implementation is similar to that of WindowMaker).
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libiconv2-1.12-1
-  libX11_6-1.1.5-1
-  libXext6-1.0.4-1
-  libXft2-2.1.13-1
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libiconv2-1.13-10
+  libstdc++6-4.3.2-2
+  libX11_6-1.2.1-1
+  libXext6-1.0.5-10
+  libXft2-2.1.13-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.7a-13
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -61,12 +63,11 @@ Files included in the binary package:
   /usr/share/blackbox/styles/Green
   /usr/share/blackbox/styles/Purple
   /usr/share/blackbox/styles/Red
-  /usr/share/doc/blackbox-0.70.1/AUTHORS
-  /usr/share/doc/blackbox-0.70.1/ChangeLog
-  /usr/share/doc/blackbox-0.70.1/INSTALL
-  /usr/share/doc/blackbox-0.70.1/LICENSE
-  /usr/share/doc/blackbox-0.70.1/README
-  /usr/share/doc/blackbox-0.70.1/TODO
+  /usr/share/doc/blackbox/AUTHORS
+  /usr/share/doc/blackbox/ChangeLog
+  /usr/share/doc/blackbox/LICENSE
+  /usr/share/doc/blackbox/README
+  /usr/share/doc/blackbox/TODO
   /usr/share/man/man1/blackbox.1.gz
   /usr/share/man/man1/bsetbg.1.gz
   /usr/share/man/man1/bsetroot.1.gz
@@ -102,8 +103,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.70.1-1 -----
-Initial release for Cygwin.
+----- version 0.70.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

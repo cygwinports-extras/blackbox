@@ -3,7 +3,7 @@ HOMEPAGE="http://blackboxwm.sourceforge.net/"
 SRC_URI="mirror://sourceforge/blackboxwm/${P}.tar.bz2"
 PATCH_URI="
 	mirror://portage/x11-wm/${PN}/files/${P}-gcc-4.3.patch
-	0.70.1-disable-unicode-fonts.patch
+	0.70.1-unicode.patch
 	0.70.1-no-undefined.patch
 "
 

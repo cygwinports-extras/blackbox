@@ -1,0 +1,19 @@
+http://sourceware.org/bugzilla/show_bug.cgi?id=10122
+
+The Unicode standard 4.0, Section 5.2
+"Programs that need to be portable ... should not use wchar_t for storing Unicode text"
+
+--- origsrc/blackbox-0.70.1/lib/Unicode.cc	2005-01-03 09:42:53.000000000 +0000
++++ src/blackbox-0.70.1/lib/Unicode.cc	2009-05-14 19:29:20.781250000 +0100
+@@ -46,8 +46,8 @@
+   static std::string codeset;
+ 
+   static unsigned int byte_swap(unsigned int c) {
+-    wchar_t ret;
+-    int x = sizeof(wchar_t);
++    uint32_t ret;
++    int x = sizeof(uint32_t);
+     char *s = reinterpret_cast<char *>(&c);
+     char *d = reinterpret_cast<char *>(&ret) + x - 1;
+     while (x-- > 0)
+
