@@ -1,0 +1,33 @@
+NAME="blackbox"
+VERSION=0.70.1
+RELEASE=10
+CATEGORY="X11"
+SUMMARY="Lightweight window manager"
+DESCRIPTION="Blackbox is a fast, lightweight window manager for the X Window
+System, without all those annoying library dependencies. Blackbox is built
+with C++ and contains completely original code (even though the graphics
+implementation is similar to that of WindowMaker)."
+HOMEPAGE="http://blackboxwm.sourceforge.net/"
+SRC_URI="mirror://sourceforge/blackboxwm/${NAME}-${VERSION}.tar.bz2"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/blackbox.git/plain/blackbox-0.70.1-gcc43.patch
+	http://pkgs.fedoraproject.org/cgit/blackbox.git/plain/blackbox-0.70.1-Xutil.patch
+	0.70.1-unicode.patch
+	0.70.1-no-undefined.patch
+"
+
+PKG_NAMES="${NAME} libbt0 libbt-devel"
+blackbox_CONTENTS="usr/bin/b* usr/share/"
+libbt0_CATEGORY="Libs"
+libbt0_SUMMARY="Blackbox toolbox library"
+libbt0_CONTENTS="usr/bin/cygbt-0.dll"
+libbt_devel_CATEGORY="Libs"
+libbt_devel_SUMMARY=${libbt0_SUMMARY}
+libbt_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="
+	--sysconfdir=/etc/X11/${NAME}
+	--enable-mitshm
+	--enable-shape
+	--enable-xft
+"
